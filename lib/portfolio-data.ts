@@ -39,19 +39,23 @@ export type SkillGroup = {
 export const skillGroups: SkillGroup[] = [
   {
     category: 'Frontend',
-    skills: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'TypeScript', 'React', 'Vue.js'],
+    skills: ['HTML5', 'CSS3', 'Bootstrap', 'Tailwind CSS', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'Vue.js', 'shadcn/ui', 'Inertia.js'],
   },
   {
     category: 'Backend',
-    skills: ['PHP', 'Laravel', 'Node.js', 'REST APIs'],
+    skills: ['PHP', 'Laravel', 'Node.js', 'REST APIs', 'WordPress'],
   },
   {
     category: 'Databases',
-    skills: ['MySQL', 'PostgreSQL', 'MongoDB', 'SQL / NoSQL'],
+    skills: ['MySQL', 'PostgreSQL', 'Supabase', 'MongoDB', 'SQL / NoSQL'],
+  },
+  {
+    category: 'Security & Architecture',
+    skills: ['Row Level Security (RLS)', 'RBAC', 'PostgreSQL schema design', 'UUIDs', 'bcryptjs / pgcrypto'],
   },
   {
     category: 'Tools',
-    skills: ['Git', 'GitHub', 'Docker', 'Postman'],
+    skills: ['Git', 'GitHub', 'Docker', 'Vercel', 'Postman', 'Cloud Native'],
   },
   {
     category: 'AI / Data',
@@ -65,8 +69,8 @@ export const skillGroups: SkillGroup[] = [
     ],
   },
   {
-    category: 'Other',
-    skills: ['UML', 'Agile methodologies', 'Software architecture', 'UI/UX fundamentals'],
+    category: 'Soft Skills',
+    skills: ['Technical project management', 'Problem solving & debugging', 'Teamwork & Git collaboration', 'Agile methodologies', 'UI/UX fundamentals'],
   },
 ]
 
@@ -80,8 +84,24 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
+    role: 'Full Stack Developer — Internship (PFA)',
+    company: 'ENSI Tanger — ensiNetwork Platform',
+    location: 'Tanger',
+    period: 'August 2026',
+    bullets: [
+      'Designed and built a full-stack social & educational platform for the ENSI community (students, professors, administrators)',
+      'Social feed with posts, likes, comments, dynamic user profiles and search',
+      'Real-time instant messaging (floating chat) and dynamic notifications',
+      'Exam archive and learning resource management with file upload/download via Supabase Storage',
+      'Role management (admin / professor / student) with RBAC and PostgreSQL Row Level Security',
+      'Administration dashboard for user and content moderation',
+      'PostgreSQL database design: schema, indexes, foreign keys, UUIDs and password hashing (bcryptjs, pgcrypto)',
+      'Multi-context architecture (auth, posts, chat, notifications, downloads) with React Context API',
+    ],
+  },
+  {
     role: 'Full Stack Web Developer',
-    company: 'Quick Marketing Hub',
+    company: 'Cloud Marketing Hub',
     location: 'Tanger',
     period: 'August 2024 – June 2026',
     bullets: [
@@ -121,6 +141,24 @@ export type Project = {
 export const projectCategories = ['All', 'Full Stack', 'Backend', 'Frontend', 'AI'] as const
 
 export const projects: Project[] = [
+  {
+    title: 'ensiNetwork — Educational Social Platform',
+    description:
+      'A full-stack social & educational platform built for the ENSI community. Features a social feed, real-time chat, resource management, RBAC role system and an admin dashboard.',
+    category: 'Full Stack',
+    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'Supabase', 'PostgreSQL', 'Vercel Analytics'],
+    features: [
+      'Social feed (posts, likes, comments, search)',
+      'Real-time instant messaging',
+      'Dynamic notifications',
+      'Exam archive & resource management',
+      'RBAC + Row Level Security',
+      'Admin dashboard',
+    ],
+    github: 'https://github.com/ikraamgh',
+    demo: 'https://ensi-educational-platform.vercel.app/',
+  },
+
   {
     title: 'Personal Portfolio Website',
     description:
