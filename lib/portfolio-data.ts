@@ -142,6 +142,23 @@ export const projectCategories = ['All', 'Full Stack', 'Backend', 'Frontend', 'A
 
 export const projects: Project[] = [
   {
+    title: 'Green Energy — AI-Powered Energy Management Platform',
+    description:
+      'Full-stack PFE project: a smart energy management platform for solar energy companies. Includes a customer portal, an admin dashboard with AI-generated analytics, real-time insights and project tracking.',
+    category: 'AI',
+    technologies: ['Vue 3', 'Laravel', 'FastAPI', 'Python', 'PostgreSQL', 'Docker', 'Vite', 'Nginx'],
+    features: [
+      'AI analytics dashboard (ML predictions)',
+      'Customer & project management',
+      'Solar energy consumption insights',
+      'Admin panel with RBAC',
+      'CI/CD with GitHub Actions',
+      'Docker containerized architecture',
+    ],
+    github: 'https://github.com/green-ennergy/Green_ennergy',
+    demo: 'Coming soon',
+  },
+  {
     title: 'ensiNetwork — Educational Social Platform',
     description:
       'A full-stack social & educational platform built for the ENSI community. Features a social feed, real-time chat, resource management, RBAC role system and an admin dashboard.',
