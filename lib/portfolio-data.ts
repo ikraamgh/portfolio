@@ -156,7 +156,7 @@ export const projects: Project[] = [
       'Docker containerized architecture',
     ],
     github: 'https://github.com/green-ennergy/Green_ennergy',
-    demo: 'Coming soon',
+    demo: 'https://green-ennergy.vercel.app/',
   },
   {
     title: 'ensiNetwork — Educational Social Platform',
