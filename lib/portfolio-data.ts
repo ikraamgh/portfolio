@@ -194,46 +194,6 @@ export const projects: Project[] = [
   },
 
   {
-    title: 'Personal Portfolio Website',
-    description:
-      'This very portfolio — a modern, responsive single-page application built with Next.js, TypeScript and Tailwind CSS, showcasing my work and skills.',
-    category: 'Frontend',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'React'],
-    features: ['Responsive design', 'Dark mode', 'Smooth animations', 'Downloadable CV'],
-    github: 'https://github.com/ikraamgh/portfolio',
-    demo: 'Coming soon',
-  },
-  {
-    title: 'Full Stack Business Management Platform',
-    description:
-      'A complete management platform with authentication, an interactive dashboard, and full CRUD operations for day-to-day business operations.',
-    category: 'Full Stack',
-    technologies: ['Laravel', 'React', 'MySQL', 'REST API'],
-    features: ['Authentication', 'Dashboard', 'CRUD', 'User management', 'Statistics'],
-    github: 'https://github.com/ikraamgh',
-    demo: 'Coming soon',
-  },
-  {
-    title: 'AI Assistant',
-    description:
-      'A conversational AI assistant with a clean chat interface, powered by a Python backend that integrates language model APIs.',
-    category: 'AI',
-    technologies: ['Python', 'FastAPI', 'AI API'],
-    features: ['Conversational interface', 'Context-aware responses', 'API integration'],
-    github: 'https://github.com/ikraamgh',
-    demo: 'Coming soon',
-  },
-  {
-    title: 'Collaborative Project Management App',
-    description:
-      'A team collaboration tool to organize projects and tasks, assign members, and track progress in real time.',
-    category: 'Full Stack',
-    technologies: ['JavaScript', 'Node.js', 'MongoDB'],
-    features: ['Projects', 'Tasks', 'Users', 'Collaboration'],
-    github: 'https://github.com/ikraamgh',
-    demo: 'Coming soon',
-  },
-  {
     title: 'Booking Web Application',
     description:
       'A reservation system with availability management and an administration panel for handling bookings efficiently.',
