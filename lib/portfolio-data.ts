@@ -159,6 +159,23 @@ export const projects: Project[] = [
     demo: 'https://green-ennergy.vercel.app/',
   },
   {
+    title: 'e-Shoply — Full Stack E-Commerce Platform',
+    description:
+      'A complete e-commerce platform with category navigation, shopping cart, wishlist, authentication, order placement and an admin dashboard. Frontend on Vercel, backend on Render with Docker.',
+    category: 'Full Stack',
+    technologies: ['React', 'Vite', 'TypeScript', 'Laravel 11', 'PostgreSQL', 'REST API', 'Docker', 'Vercel', 'Render'],
+    features: [
+      'Category navigation & product listing',
+      'Shopping cart & wishlist',
+      'Authentication (register / login)',
+      'Order placement & tracking',
+      'Admin dashboard',
+      'Deployed frontend + backend',
+    ],
+    github: 'https://github.com/ikraamgh',
+    demo: 'https://e-shoply.vercel.app/',
+  },
+  {
     title: 'ensiNetwork — Educational Social Platform',
     description:
       'A full-stack social & educational platform built for the ENSI community. Features a social feed, real-time chat, resource management, RBAC role system and an admin dashboard.',
