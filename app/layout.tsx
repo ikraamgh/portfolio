@@ -22,6 +22,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://ghiouan.vercel.app'),
   title: 'Ikram Ghiouan Soussi — Full Stack Developer & AI Enthusiast',
   description:
     'Portfolio of Ikram Ghiouan Soussi, a Full Stack Developer and AI Enthusiast based in Tangier, Morocco. Experienced in Laravel, React, Node.js and building AI-powered backend services.',
@@ -31,6 +32,10 @@ export const metadata: Metadata = {
     'AI Developer',
     'Laravel',
     'React',
+    'Next.js',
+    'TypeScript',
+    'Vue.js',
+    'Supabase',
     'Node.js',
     'Python',
     'FastAPI',
@@ -39,13 +44,23 @@ export const metadata: Metadata = {
     'Ikram Ghiouan Soussi',
   ],
   authors: [{ name: 'Ikram Ghiouan Soussi' }],
-  generator: 'v0.app',
+  alternates: {
+    canonical: 'https://ghiouan.vercel.app',
+  },
   openGraph: {
     title: 'Ikram Ghiouan Soussi — Full Stack Developer & AI Enthusiast',
     description:
       'Full Stack Developer & AI Enthusiast based in Tangier, Morocco. Building practical, scalable and user-focused digital solutions.',
+    url: 'https://ghiouan.vercel.app',
+    siteName: 'Ikram Ghiouan Soussi Portfolio',
     type: 'website',
     locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ikram Ghiouan Soussi — Full Stack Developer & AI Enthusiast',
+    description:
+      'Full Stack Developer & AI Enthusiast based in Tangier, Morocco. Building practical, scalable and user-focused digital solutions.',
   },
 }
 

@@ -115,7 +115,11 @@ export function Contact() {
               <Field label="Name" error={errors.name} htmlFor="name">
                 <input
                   id="name"
+                  name="name"
                   type="text"
+                  autoComplete="name"
+                  aria-describedby={errors.name ? 'name-error' : undefined}
+                  aria-invalid={Boolean(errors.name)}
                   value={values.name}
                   onChange={update('name')}
                   placeholder="Your name"
@@ -126,7 +130,11 @@ export function Contact() {
               <Field label="Email" error={errors.email} htmlFor="email">
                 <input
                   id="email"
+                  name="email"
                   type="email"
+                  autoComplete="email"
+                  aria-describedby={errors.email ? 'email-error' : undefined}
+                  aria-invalid={Boolean(errors.email)}
                   value={values.email}
                   onChange={update('email')}
                   placeholder="you@example.com"
@@ -137,7 +145,11 @@ export function Contact() {
               <Field label="Message" error={errors.message} htmlFor="message">
                 <textarea
                   id="message"
+                  name="message"
                   rows={5}
+                  autoComplete="off"
+                  aria-describedby={errors.message ? 'message-error' : undefined}
+                  aria-invalid={Boolean(errors.message)}
                   value={values.message}
                   onChange={update('message')}
                   placeholder="Tell me about the role or project..."
@@ -191,7 +203,11 @@ function Field({
         {label}
       </label>
       {children}
-      {error && <p className="mt-1.5 text-xs text-destructive">{error}</p>}
+      {error && (
+        <p id={`${htmlFor}-error`} role="alert" className="mt-1.5 text-xs text-destructive">
+          {error}
+        </p>
+      )}
     </div>
   )
 }

@@ -43,9 +43,13 @@ export function Navbar() {
         scrolled ? 'glass border-b border-border/60' : 'border-b border-transparent',
       )}
     >
-      <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
+      <nav
+        aria-label="Main navigation"
+        className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6"
+      >
         <a
           href="#hero"
+          onClick={() => setOpen(false)}
           className="flex items-center gap-2 font-heading text-lg font-bold tracking-tight"
         >
           <span className="flex size-8 items-center justify-center rounded-lg bg-primary/15 text-primary">

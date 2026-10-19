@@ -14,7 +14,7 @@ export const profile = {
   portfolioRepo: 'https://github.com/ikraamgh/portfolio',
   cv: '/ikram-ghiouan-soussi-cv.pdf',
   heroTagline:
-    'Engineering student in Computer Science with hands-on experience in Full Stack Web Development and a growing specialization in Artificial Intelligence. I build practical, scalable and user-focused digital solutions.',
+    'Engineering student at ENSI Tanger specializing in AI — with real-world Full Stack experience building scalable web applications with Laravel, React, Next.js and Supabase.',
   about: [
     'I am an engineering student in Computer Science at ENSI Tanger, specializing in Artificial Intelligence, with a solid foundation in Full Stack Web Development earned through professional experience and a dedicated Full-Stack development diploma.',
     'My work spans building and maintaining web applications with PHP/Laravel, creating responsive interfaces with modern JavaScript frameworks, and developing internal tools that automate business processes. I am now channeling that engineering mindset into Machine Learning and AI-powered backend services.',
@@ -136,6 +136,7 @@ export type Project = {
   features: string[]
   github: string
   demo: string
+  featured?: boolean
 }
 
 export const projectCategories = ['All', 'Full Stack', 'Backend', 'Frontend', 'AI'] as const
@@ -143,6 +144,7 @@ export const projectCategories = ['All', 'Full Stack', 'Backend', 'Frontend', 'A
 export const projects: Project[] = [
   {
     title: 'Green Energy — AI-Powered Energy Management Platform',
+    featured: true,
     description:
       'Full-stack PFE project: a smart energy management platform for solar energy companies. Includes a customer portal, an admin dashboard with AI-generated analytics, real-time insights and project tracking.',
     category: 'AI',

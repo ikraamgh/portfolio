@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { ExternalLink, ArrowUpRight } from 'lucide-react'
+import { ExternalLink, ArrowUpRight, Star } from 'lucide-react'
 import { projects, projectCategories } from '@/lib/portfolio-data'
 import { GithubIcon } from '@/components/brand-icons'
 import { SectionHeading } from '@/components/section-heading'
@@ -19,7 +19,7 @@ export function Projects() {
         <SectionHeading
           eyebrow="projects"
           title="Featured projects"
-          description="A selection of projects reflecting my technical profile. Links are placeholders and will be updated with real repositories and demos."
+          description="A selection of projects reflecting my technical profile."
         />
 
         <div className="mt-8 flex flex-wrap gap-2" role="tablist" aria-label="Filter projects">
@@ -49,9 +49,17 @@ export function Projects() {
               className="group flex flex-col rounded-2xl border border-border bg-card/50 p-6 transition-all hover:-translate-y-1 hover:border-primary/50"
             >
               <div className="flex items-start justify-between gap-4">
-                <span className="rounded-md bg-accent/12 px-2.5 py-1 text-xs font-medium text-accent">
-                  {project.category}
-                </span>
+                <div className="flex items-center gap-2">
+                  <span className="rounded-md bg-accent/12 px-2.5 py-1 text-xs font-medium text-accent">
+                    {project.category}
+                  </span>
+                  {project.featured && (
+                    <span className="inline-flex items-center gap-1 rounded-md border border-amber-500/30 bg-amber-500/10 px-2 py-0.5 text-xs font-medium text-amber-400">
+                      <Star className="size-3 fill-amber-400/30" aria-hidden="true" />
+                      Featured
+                    </span>
+                  )}
+                </div>
                 <ArrowUpRight className="size-5 text-muted-foreground transition-colors group-hover:text-primary" />
               </div>
 
@@ -99,8 +107,8 @@ export function Projects() {
                     Live demo
                   </a>
                 ) : (
-                  <span className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground">
-                    <ExternalLink className="size-4" />
+                  <span className="inline-flex items-center gap-1.5 text-sm italic text-muted-foreground/75">
+                    <ExternalLink className="size-4 opacity-50" />
                     {project.demo}
                   </span>
                 )}

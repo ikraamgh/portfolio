@@ -30,7 +30,7 @@ export function Footer() {
         <div className="flex gap-2">
           <a
             href={`mailto:${profile.email}`}
-            aria-label="Email"
+            aria-label="Send email to Ikram"
             className="flex size-10 items-center justify-center rounded-lg border border-border bg-card/50 text-muted-foreground transition-colors hover:border-primary/50 hover:text-primary"
           >
             <Mail className="size-4" />
@@ -39,7 +39,7 @@ export function Footer() {
             href={profile.linkedin}
             target="_blank"
             rel="noreferrer"
-            aria-label="LinkedIn"
+            aria-label="Ikram Ghiouan Soussi on LinkedIn"
             className="flex size-10 items-center justify-center rounded-lg border border-border bg-card/50 text-muted-foreground transition-colors hover:border-primary/50 hover:text-primary"
           >
             <LinkedinIcon className="size-4" />
@@ -48,7 +48,7 @@ export function Footer() {
             href={profile.github}
             target="_blank"
             rel="noreferrer"
-            aria-label="GitHub"
+            aria-label="Ikram Ghiouan Soussi on GitHub"
             className="flex size-10 items-center justify-center rounded-lg border border-border bg-card/50 text-muted-foreground transition-colors hover:border-primary/50 hover:text-primary"
           >
             <GithubIcon className="size-4" />
@@ -72,7 +72,6 @@ export function Footer() {
           </a>
         </div>
       </div>
-
     </footer>
   )
 }

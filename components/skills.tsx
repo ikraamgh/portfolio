@@ -4,6 +4,8 @@ import {
   Database,
   Wrench,
   BrainCircuit,
+  ShieldCheck,
+  Users,
   Sparkles,
   type LucideIcon,
 } from 'lucide-react'
@@ -14,8 +16,10 @@ const categoryIcons: Record<string, LucideIcon> = {
   Frontend: Code2,
   Backend: Server,
   Databases: Database,
+  'Security & Architecture': ShieldCheck,
   Tools: Wrench,
   'AI / Data': BrainCircuit,
+  'Soft Skills': Users,
   Other: Sparkles,
 }
 
