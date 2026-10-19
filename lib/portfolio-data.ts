@@ -194,6 +194,23 @@ export const projects: Project[] = [
   },
 
   {
+    title: 'ResaSportif — Sports Facility Booking Platform',
+    description:
+      'A sports reservation web app where users can browse facilities (football, basketball, tennis, swimming…), pick a date and time slot, fill in their details and proceed to payment. Custom design system with a forest green & lime palette, fully responsive.',
+    category: 'Frontend',
+    technologies: ['React 18', 'Redux Toolkit', 'React Router v6', 'Bootstrap 5', 'Custom CSS'],
+    features: [
+      'Sports facility browsing by category',
+      'Interactive date & time slot selection',
+      'Booking form with payment flow',
+      'Custom design system (green & lime)',
+      'Fully responsive layout',
+      'Deployed on GitHub Pages',
+    ],
+    github: 'https://github.com/ikraamgh/ResaSportif',
+    demo: 'https://ikraamgh.github.io/ResaSportif/#',
+  },
+  {
     title: 'Booking Web Application',
     description:
       'A reservation system with availability management and an administration panel for handling bookings efficiently.',
