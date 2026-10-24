@@ -143,6 +143,23 @@ export const projectCategories = ['All', 'Full Stack', 'Backend', 'Frontend', 'A
 
 export const projects: Project[] = [
   {
+    title: 'CareerPilot AI — AI-Powered Career Assistant',
+    description:
+      'A full-stack SaaS application that helps job seekers manage their career journey — from PDF resume uploads and job matching to application tracking and skill gap analysis. Built with Supabase for auth, storage and Row-Level Security.',
+    category: 'AI',
+    technologies: ['Next.js 16', 'TypeScript', 'Tailwind CSS', 'Supabase', 'shadcn/ui', 'PostgreSQL', 'Vercel'],
+    features: [
+      'Email/password authentication with route protection',
+      'PDF resume upload to private cloud storage',
+      'Job match analysis & skill gap workflow',
+      'Application tracker with Kanban & list views',
+      'Row-Level Security — per-user data isolation',
+      'Fully responsive (mobile, tablet, desktop)',
+    ],
+    github: 'https://github.com/ikraamgh/CareerPilot-AI',
+    demo: 'https://ai-careerpilot.vercel.app',
+  },
+  {
     title: 'Green Energy — AI-Powered Energy Management Platform',
     featured: true,
     description:
